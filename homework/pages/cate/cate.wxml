@@ -1,0 +1,32 @@
+<!-- pages/cate/cate.wxml -->
+<view class="container">
+  <search style="position:fixed;top: 0; z-index:1; width: 100%;"></search>
+  <view class="cate">
+    <scroll-view scroll-y="true" class="left">
+      <block wx:for="{{catedata}}" wx:key="cat_id">
+        <view class="{{index===currentIndex?'active':''}}" bindtap="handelCateClick" data-index="{{index}}">
+          <text>{{item.cat_name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" class="right">
+      <block wx:for="{{catelist}}" wx:key="cat_id">
+        <view class="group">
+          <view class="goods_title">
+            /
+            <text>{{item.cat_name}}</text>
+            /
+          </view>
+          <view class="goods_list">
+            <block wx:for="{{item.children}}" wx:key="cat_id">
+              <navigator url="../goods_list/goods_list?cid={{item.cat_id}}">
+                <image src="{{item.cat_icon}}"></image>
+                <view>{{item.cat_name}}</view>
+              </navigator>
+            </block>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

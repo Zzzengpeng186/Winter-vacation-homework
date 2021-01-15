@@ -1,0 +1,27 @@
+/* components/search/search.wxss */
+/* 搜索框 */
+.top {
+  height: 88rpx;
+  width: 100%;
+  background-color: #c00000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 111;
+  padding-bottom: 10rpx;
+}
+.search {
+  height: 72rpx;
+  width: 714rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_image {
+  width: 32rpx;
+  height: 32rpx;
+}

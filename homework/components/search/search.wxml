@@ -1,0 +1,8 @@
+<!-- components/search/search.wxml -->
+<!-- 搜索框 -->
+<view class="top">
+  <view class="search">
+    <image class="search_image" src="/images/search.png"></image>
+    <text>搜索</text>
+  </view>
+</view>

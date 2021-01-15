@@ -1,0 +1,28 @@
+/* pages/goods_list/goods_list.wxss */
+
+.goods_list {
+  height: 240rpx;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+}
+
+.goods_list_left {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 12rpx;
+  margin-top: 20rpx;
+}
+.goods_list_left image {
+  width: 100%;
+  height: 100%;
+}
+
+.goods_list_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods_price {
+  color: #c00000;
+}

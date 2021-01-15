@@ -1,0 +1,66 @@
+/**index.wxss**/
+
+/* 轮播图 */
+swiper {
+  margin-top: 98rpx;
+  height: 330rpx;
+  width: 100%;
+}
+
+swiper-item {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-image {
+  height: 100%;
+  width: 100%;
+}
+
+/* 分类 */
+.cate {
+  height: 200rpx;
+  display: flex;
+
+}
+
+.cate view {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cate view image {
+  width: 128rpx;
+  height: 140rpx;
+}
+
+/*获取首页楼层数据*/
+.floor_top image {
+  /* width: 260rpx; */
+  height: 60rpx;
+}
+
+.floor_main {
+  height: 394rpx;
+  padding: 0 12rpx;
+  box-sizing: border-box;
+}
+
+.floor_main image {
+  height: 49%;
+  float: left;
+}
+
+.floor_main image:first-child {
+  height: 100%;
+}
+
+.floor_main image:nth-child(n+2) {
+  margin-left: 14rpx;
+}
+
+.floor_main image:nth-child(n+4) {
+  padding-top: 8rpx;
+}
